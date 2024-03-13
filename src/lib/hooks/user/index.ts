@@ -22,6 +22,7 @@ export const useUser = () => {
             console.log(error);
             removeToken();
             removeId();
+            dispatch(authSlice.actions.logout());
         }
     };
 
