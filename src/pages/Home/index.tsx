@@ -1,1 +1,3 @@
-export const Home: React.FC = () => <h1>Home</h1>;
+import { OnlineUser } from '@/section/home/OnlineUser';
+
+export const Home: React.FC = () => <OnlineUser />;

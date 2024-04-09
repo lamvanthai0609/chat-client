@@ -14,6 +14,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
     const navigate = useNavigate();
     const { value: tokenValue, setValue: setTokenValue } = useLocalStorage('token', '');
     const { value: userIdValue, setValue: setUserIdValue } = useLocalStorage('userId', '');
+
     React.useEffect(() => {
         if (token) setTokenValue(token);
         if (user?._id) setUserIdValue(user._id);
